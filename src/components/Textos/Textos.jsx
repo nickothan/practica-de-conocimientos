@@ -1,4 +1,4 @@
-import { Container, TxtDegradado, Txt3D } from './styles';
+import { Container, TxtDegradado } from './styles';
 
 export default function Textos() {
 

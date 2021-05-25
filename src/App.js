@@ -1,6 +1,8 @@
 import React from 'react';
-import Textos from './components/Textos/Textos';
 import { Container, Description, Content } from './styles';
+
+import Textos from './components/Textos/Textos';
+import BackgroundSlice from './components/BackgroundSlide/BackgroundSlide'
 
 function App() {
   
@@ -11,6 +13,7 @@ function App() {
       </Description>
       <Content>
       <Textos />
+      <BackgroundSlice/>
       </Content>
     </Container>
   );
