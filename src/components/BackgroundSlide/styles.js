@@ -8,6 +8,7 @@ export const Container = styled.div`
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    text-align: center;
 `;
 
 export const slide = styled.div`
