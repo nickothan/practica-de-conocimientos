@@ -5,10 +5,17 @@ export const Container = styled.div`
     padding: 5px;
     border-radius: 8px ;
     box-shadow: 0 0 3px 1px #a6b1ff;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
     text-align: center;
+
+    h1{
+        display: ;
+    }
+`;
+
+export const Content = styled.div`
+display: flex;
+flex-flow: wrap;
+justify-content: center;
 `;
 
 export const slide = styled.div`

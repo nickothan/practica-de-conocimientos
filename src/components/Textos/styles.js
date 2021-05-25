@@ -9,9 +9,9 @@ export const Container = styled.div`
 export const TxtDegradado = styled.p`
     position: relative;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.7em;
     text-align: center;
-    font-weight: 700;
+    font-weight: 800;
     z-index: 1;
     
     
