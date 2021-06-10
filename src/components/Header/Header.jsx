@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-import { HeaderContainer, Description } from './styles'
+import { HeaderContainer, Description, Btn } from './styles'
 
 export default function Header() {
   return (
@@ -8,13 +8,13 @@ export default function Header() {
       <Description>Practica de conocimientos</Description>
       <nav>
         <Link to='/'>
-          <button>Home</button>
+          <Btn>Home</Btn>
         </Link>
         <Link to='/estilos'>
-          <button>Estilos</button>
+          <Btn>Estilos</Btn>
         </Link>
         <Link to='/animaciones'>
-          <button>Animaciones</button>
+          <Btn>Animaciones</Btn>
         </Link>
       </nav>
     </HeaderContainer>
