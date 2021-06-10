@@ -1,1 +1,1 @@
-export { default } from  './Estilos';
+export { default } from './Textos'
