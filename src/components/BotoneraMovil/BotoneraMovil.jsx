@@ -6,7 +6,7 @@ export default function BotoneraMovil() {
   return (
     <BotoneraMovilContainer>
       <input type='checkbox' name='' id='botonMovil' />
-      <label for='botonMovil' id='labelMovil'>
+      <label htmlFor='botonMovil' id='labelMovil'>
         <span>
           <Menu />
           <h2>Menú</h2>
