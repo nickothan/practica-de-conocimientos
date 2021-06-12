@@ -7,27 +7,39 @@ import img6 from './img/img6.jpg'
 
 export const dataGaleria = [
   {
-    img1: img1,
-    title: 'Book'
+    img: img1,
+    title: 'Book',
+    idBtn: 'btn01',
+    idGaleria: 'idGaleria01'
   },
   {
-    img2: img2,
-    title: 'tree'
+    img: img2,
+    title: 'tree',
+    idBtn: 'btn02',
+    idGaleria: 'idGaleria02'
   },
   {
-    img3: img3,
-    title: 'Bridge'
+    img: img3,
+    title: 'Bridge',
+    idBtn: 'btn03',
+    idGaleria: 'idGaleria03'
   },
   {
-    img4: img4,
-    title: 'Mountains'
+    img: img4,
+    title: 'Mountains',
+    idBtn: 'btn04',
+    idGaleria: 'idGaleria04'
   },
   {
-    img5: img5,
-    title: 'Elephant'
+    img: img5,
+    title: 'Elephant',
+    idBtn: 'btn05',
+    idGaleria: 'idGaleria05'
   },
   {
-    img6: img6,
-    title: 'Gigant'
+    img: img6,
+    title: 'Gigant',
+    idBtn: 'btn06',
+    idGaleria: 'idGaleria06'
   }
 ]

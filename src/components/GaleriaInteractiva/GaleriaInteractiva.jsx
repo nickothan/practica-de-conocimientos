@@ -1,12 +1,12 @@
 import {
   GaleriaInteractivaContainer,
-  GaleriaInteractivaContent
+  GaleriaInteractivaContent,
+  ImagContent
 } from './styles'
 
 import { dataGaleria } from '../../assets/imagenes'
 
 export default function GaleriaInteractiva() {
-  console.log('Data : ', dataGaleria)
   return (
     <GaleriaInteractivaContainer>
       <h3>Galeria Interactiva</h3>
@@ -14,36 +14,37 @@ export default function GaleriaInteractiva() {
         <ul>
           <li>
             <div>
-              <input type='radio' name='entrada' id='btn01' />
-              <label htmlFor='btn1'>
-                <img src='' alt='' />
-              </label>
+              <h3>title 1</h3>
+              {console.log('data galeria : ', dataGaleria)}
+              <img src={dataGaleria[0].img} alt='' />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                sunt ut sapiente perspiciatis consectetur, voluptatum nisi
+              </p>
             </div>
           </li>
-          <li>
-            <div>
-              <input type='radio' name='entrada' id='btn01' />
-              <label htmlFor='btn1'>
-                <img src='' alt='' />
-              </label>
-            </div>
-          </li>
-          <li>
-            <div>
-              <input type='radio' name='entrada' id='btn01' />
-              <label htmlFor='btn1'>
-                <img src='' alt='' />
-              </label>
-            </div>
-          </li>
-          <li>
-            <div>
-              <input type='radio' name='entrada' id='btn01' />
-              <label htmlFor='btn1'>
-                <img src='' alt='' />
-              </label>
-            </div>
-          </li>
+          {dataGaleria.map(({ img, title, idBtn, idGaleria }) => {
+            return (
+              <ImagContent
+                key={Math.random() * 10}
+                idGaleria={idGaleria}
+                idBtn={idBtn}>
+                <input type='radio' name='entrada' id={idBtn} />
+                <label htmlFor={idBtn}>
+                  <img src={img} alt={`${title}-mini`} />
+                </label>
+                <div id={idGaleria}>
+                  <h3>title 1</h3>
+                  <img src={img} alt={title} />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio sunt ut sapiente perspiciatis consectetur, voluptatum
+                    nisi
+                  </p>
+                </div>
+              </ImagContent>
+            )
+          })}
         </ul>
       </GaleriaInteractivaContent>
     </GaleriaInteractivaContainer>
